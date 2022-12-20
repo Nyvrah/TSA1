@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>TSA site</title>
+		<link type="text/css" href="resources/css/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+        <div class="background" id="background"></div>
+        <section class="wheel-container">
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <model-viewer class="wheel" id="wheel" src="resources/assets/wheel_large.glb" interpolation-decay="100" min-field-of-view="0deg" max-field-of-view="180deg" background-color="transparent" auto-rotate rotation-per-second="5deg" auto-rotate-delay="0" camera-orbit="90deg 0deg 100%" max-camera-orbit="Infinity 180deg auto" min-camera-orbit="-Infinity 0deg auto" shadow-intensity="4"></model-viewer>
+        </section>
+
+
+        <script src="resources/scripts/wheelanimation.js"></script>
+        <label id = "scrollCount" class="l" style="color:rgb(0, 0, 0);">
+			0
+		</label>
+    </body>
+</html>
